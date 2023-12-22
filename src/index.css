@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --brand-yellow: hsl(47, 88%, 63%);
+  --brand-white: hsl(0, 0%, 100%);
+  --brand-grey: hsl(0, 0%, 50%);
+  --brand-black: hsl(0, 0%, 7%);
+  --brand-shadow: 8px 8px 0px 0px #000;
+}
+
+:root,
+html,
+body {
+  min-height: 100%;
+  background-color: var(--brand-yellow);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 375px;
+  max-width: 1440px;
+  padding: 0px 24px;
+}
+
+.brand-shadow {
+  box-shadow: var(--brand-shadow);
+}
